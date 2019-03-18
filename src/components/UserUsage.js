@@ -7,7 +7,7 @@ export default class UserUsage extends Component {
     return (
       <>
         <div className="col-sm-12 my-5">
-          <Typography className="font-weight-bold" variant="h5">How many of these devices does your household own?</Typography>
+          <Typography className="font-weight-bold" variant="h5">How Frequent do they use these devices?</Typography>
         </div>
         <div className="row text-left my-3 mx-auto justify-content-start">
           { state.smartTvs.count > 0 && <div className="my-3 col-sm-4">

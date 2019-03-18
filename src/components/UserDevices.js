@@ -6,7 +6,7 @@ export default class UserDevices extends Component {
     return (
       <>
         <div className="col-sm-12 my-5">
-          <Typography variant="h5">How many of these devices does your household own?</Typography>
+          <Typography variant="h5">How many of these devices does your household use?</Typography>
         </div>
         <div className="row text-left my-3 mx-auto justify-content-center align-items-end">
           <div className="col-sm-4">
