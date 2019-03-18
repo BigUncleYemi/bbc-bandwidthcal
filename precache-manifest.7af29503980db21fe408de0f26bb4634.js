@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/bbc-bandwidthcal/static/media/email.9183fa3b.svg"
   },
   {
-    "revision": "d25b295112d7c05406f7",
+    "revision": "362008ee7871ac83e1f2",
     "url": "/bbc-bandwidthcal/static/css/main.a39fb141.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/bbc-bandwidthcal/static/media/downloadLarge.5e12d555.svg"
   },
   {
-    "revision": "d25b295112d7c05406f7",
-    "url": "/bbc-bandwidthcal/static/js/main.fc563aa8.chunk.js"
+    "revision": "362008ee7871ac83e1f2",
+    "url": "/bbc-bandwidthcal/static/js/main.ea1bf2c6.chunk.js"
   },
   {
     "revision": "fed27edca1271c92c263ea8d36b5c608",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/bbc-bandwidthcal/static/css/2.e0342017.chunk.css"
   },
   {
-    "revision": "295de9aea29776b2b63a92c6040cbb22",
+    "revision": "2a2df3c14feb30b6641460c16709c1be",
     "url": "/bbc-bandwidthcal/index.html"
   }
 ];

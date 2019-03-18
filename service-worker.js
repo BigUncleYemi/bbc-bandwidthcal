@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/bbc-bandwidthcal/precache-manifest.cebb045a7726f94716ea95373ae71950.js"
+  "/bbc-bandwidthcal/precache-manifest.7af29503980db21fe408de0f26bb4634.js"
 );
 
 workbox.clientsClaim();
