@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title{
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.my-5{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Apps::before{
+  opacity: 0.3;
+  background: url('../img/dpbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  content: " ";
+  position: absolute;
+  left: -16px;
+  top: -6px;
+  min-height: 101vh;
+  background-position: center;
+}
+
+.bens{
+  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  content: " ";
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+@media (max-width: 1040px){
+  .Apps::before{
+    min-width: 105vw;
+    min-height: 105vh;
+  }
+}

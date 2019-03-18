@@ -1,25 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css';
+import Steppers from './Home';
+import CStepper from './Corprate';
+import {logo} from './assets/img/index';
+import Typography from '@material-ui/core/Typography';
+import {Button} from '@material-ui/core'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      mode: ''
+    }
+    this.switchMode = this.switchMode.bind(this);
+  }
+  
+  switchMode = data => {
+    this.setState({
+      mode: data
+    })
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className={this.state.mode === '' ? `App Apps py-3` : `py-5 App bens`}>
+        <div className="my-4" style={{zIndex: '999'}}>
+          <img onClick={(e) => this.switchMode('')} style={{cursor: 'pointer'}} src={logo} alt="logo" />
+          <Typography variant="h2" color="primary" className="title font-weight-bold my-3">Bandwidth Calculator</Typography>
+        </div>
+        {this.state.mode === 'corprate' && <CStepper mode={this.state.mode} />}
+        {this.state.mode === 'home' && <Steppers mode={this.state.mode} /> }
+        {this.state.mode === '' && <div className="row my-4">
+          <Button size="large" onClick={(e) => this.switchMode('home')} variant="contained" className="mx-2" color="primary">
+            Household
+          </Button>
+          <Button size="large" onClick={(e) => this.switchMode('corprate')} variant="outlined" className="mx-2" color="primary">
+            Corprate 
+          </Button>
+        </div>}
       </div>
     );
   }
