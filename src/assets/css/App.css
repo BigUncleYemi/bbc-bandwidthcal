@@ -10,6 +10,7 @@
 .title{
   margin-top: 20px !important;
   margin-bottom: 20px !important;
+  transform: scale(0.9);
 }
 
 .my-5{
@@ -41,7 +42,7 @@
 
 @media (max-width: 1040px){
   .Apps::before{
-    min-width: 105vw;
-    min-height: 105vh;
+    min-width: 104vw;
+    min-height: 101vh;
   }
 }

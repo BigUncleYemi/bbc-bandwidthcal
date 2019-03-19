@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className={this.state.mode === '' ? `App Apps py-3` : `py-5 App bens`}>
-        <div className="my-4" style={{zIndex: '999'}}>
+        <div className="" style={{zIndex: '999'}}>
           <img onClick={(e) => this.switchMode('')} style={{cursor: 'pointer'}} src={logo} alt="logo" />
           <Typography variant="h2" color="primary" className="title font-weight-bold my-3">Bandwidth Calculator</Typography>
         </div>

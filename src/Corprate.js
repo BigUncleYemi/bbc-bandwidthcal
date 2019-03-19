@@ -28,7 +28,17 @@ const styles = theme => ({
     fontWeight: 'bold',
   },
   bg: {
-    background: 'transparent'
+    background: 'transparent',
+    padding: 0,
+  },
+  bandwidth:{
+    fontSize: '6rem',
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '10rem'
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '9rem'
+    },
   }
 });
 
@@ -134,12 +144,12 @@ class CSteppers extends React.Component {
           {this.state.activeStep === steps.length ? (
             <div>
               <Typography variant="h4" className={classes.instructions}>Bandwidth Needed</Typography>
-              <Typography variant="display4" style={{fontSize: '10rem'}} className="font-weight-bolder text-success">{(this.calculateBandwidth()).toFixed(2)} mbps</Typography>
+              <Typography variant="display4" className={`font-weight-bolder text-success ${classes.bandwidth}`}>{(this.calculateBandwidth()).toFixed(2)} mbps</Typography>
               <Button onClick={this.handleReset}>Reset</Button>
             </div>
           ) : (
             <div>
-              <div className={`${classes.instructions} my-5 mx-auto`}>{getStepContent( activeStep, this.state, this.handleChange, this.calculateBandwidth, this.setNumberUser, this.props)}</div>
+              <div className={`${classes.instructions} my-3 mx-auto`}>{getStepContent( activeStep, this.state, this.handleChange, this.calculateBandwidth, this.setNumberUser, this.props)}</div>
               <div>
                 <Button
                   disabled={activeStep === 0}

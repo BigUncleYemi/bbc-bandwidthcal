@@ -16,7 +16,7 @@ export default class UserNo extends Component {
 
   render() {
     return (
-      <div className="text-center justify-content-center row my-5">
+      <div className="text-center justify-content-center row my-2">
         <div className="col-sm-12">{console.log(this.props)}
           { this.props.props.mode === 'home' && <Typography className="font-weight-bold" variant="h5">How many people use the internet in your {this.props.tag}?</Typography>}
           { this.props.props.mode === 'corprate' && <Typography className="font-weight-bold" variant="h5">What is the staff capacity of your {this.props.tag}?</Typography>}
